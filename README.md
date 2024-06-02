@@ -18,3 +18,7 @@
    - Autowire in field
    - Autowire in setter method
    - Autowire with constructor
+![Screenshot (10)](https://github.com/Satishlm10/60DaysChallenge/assets/82279173/34c0bb16-8654-49fc-91e9-399f650eea29)
+![Screenshot (9)](https://github.com/Satishlm10/60DaysChallenge/assets/82279173/aed2f5f5-2ed1-4076-8d16-a6da245dc640)
+![Screenshot (8)](https://github.com/Satishlm10/60DaysChallenge/assets/82279173/0bc77c40-92cb-4c95-8b52-689e4979886f)
+![Screenshot (7)](https://github.com/Satishlm10/60DaysChallenge/assets/82279173/d96aab13-b412-4eaa-bf33-7728150f7e5e)
