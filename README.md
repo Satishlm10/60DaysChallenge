@@ -24,15 +24,18 @@
 ![Screenshot (7)](https://github.com/Satishlm10/60DaysChallenge/assets/82279173/d96aab13-b412-4eaa-bf33-7728150f7e5e)
 
 # Day-03
- Today's Learnings
+  Today's Learnings
 
-  -Development of web application before SpringBoot
-  -Servlets
-  -Manual Configuration of Servers
-  -Servlet Containers
-  -Dispatcher Servlets
-  -Manual web.xml configuration for handling client request and generating dynamic response
-  -SpringBoot Introduction
-  -Features of SpringBoot: Auto Configuration, Starter Projects, Devtools.
-  -Maven Build Automation tool
-  -Maven Project structure
+   - Development of web application before SpringBoot
+   - Servlets
+   - Manual Configuration of Servers
+   - Servlet Containers
+   - Dispatcher Servlets
+   - Manual web.xml configuration for handling client request and generating dynamic response
+   - SpringBoot Introduction
+   - Features of SpringBoot: Auto Configuration, Starter Projects, Devtools.
+   - Maven Build Automation tool
+   - Maven Project structure
+![Screenshot (11)](https://github.com/Satishlm10/60DaysChallenge/assets/82279173/76a4256c-2259-41e2-acba-f6b6a7d96a53)
+![Screenshot (13)](https://github.com/Satishlm10/60DaysChallenge/assets/82279173/15c8305d-c39a-4520-9f8f-f23238d23741)
+![Screenshot (12)](https://github.com/Satishlm10/60DaysChallenge/assets/82279173/3348a100-c298-4586-adfe-c3b02cac7b5f)
