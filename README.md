@@ -36,3 +36,11 @@
   -Features of SpringBoot: Auto Configuration, Starter Projects, Devtools.
   -Maven Build Automation tool
   -Maven Project structure
+
+# Day-04
+ Today's Learnings
+
+    - Taking a query parameter from client.
+    - Using @PathVariable annotation to store the variable passed through client uri in an object(name)
+    - using Model interface to store the parameter value to send it to the view.
+    - Using Thymeleaf Template rendering the value stored in the model.
