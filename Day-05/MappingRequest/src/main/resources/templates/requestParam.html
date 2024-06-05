@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Day-05</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<h1 th:class="${name == null && hobby == null ? 'hidden' : ''}" th:text="'Hello ' + ${name} + ', your hobby is ' + ${hobby}"></h1>
+
+<h2>60 days learning challenge - Day-05</h2>
+<h4>Request Parameter Example</h4>
+<form id="nameForm">
+    <label for="user-name">Name:</label>
+    <input type="text" id="user-name" name="name" required>
+    <br>
+    <label for="user-hobby">Hobby:</label>
+    <input type="text" id="user-hobby" name="hobby" required>
+    <br>
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+    document.getElementById('nameForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+        const name = document.getElementById('user-name').value;
+        const hobby = document.getElementById('user-hobby').value;
+        const url = `/requestParam?name=${encodeURIComponent(name)}&hobby=${encodeURIComponent(hobby)}`;
+        window.location.href = url; // Redirect to the constructed URL
+    });
+</script>
+
+</body>
+</html>

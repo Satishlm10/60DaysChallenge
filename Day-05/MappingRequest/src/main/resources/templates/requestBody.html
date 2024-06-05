@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Day-05</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<h1 th:class="${name == null && hobby == null && age == null && address == null ? 'hidden' : ''}"
+    th:text="'Hello ' + ${name} + ', your hobby is ' + ${hobby} + ', you are ' + ${age} + ' years old, and you live at ' + ${address}"></h1>
+
+<h2>60 days learning challenge - Day-05</h2>
+<h4>Request Body Example</h4>
+<form id="detailsForm">
+    <label for="user-name">Name:</label>
+    <input type="text" id="user-name" name="name" required>
+    <br>
+    <label for="user-age">Age:</label>
+    <input type="number" id="user-age" name="age" required>
+    <br>
+    <label for="user-hobby">Hobby:</label>
+    <input type="text" id="user-hobby" name="hobby" required>
+    <br>
+    <label for="user-address">Address:</label>
+    <input type="text" id="user-address" name="address" required>
+    <br>
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+    document.getElementById('detailsForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+        const name = document.getElementById('user-name').value;
+        const age = document.getElementById('user-age').value;
+        const hobby = document.getElementById('user-hobby').value;
+        const address = document.getElementById('user-address').value;
+
+        const details = {
+            name: name,
+            age: age,
+            hobby: hobby,
+            address: address
+        };
+
+        fetch('/home', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(details)
+        })
+        .then(response => response.text())
+        .then(html => {
+            document.open();
+            document.write(html);
+            document.close();
+        })
+        .catch(error => console.error('Error:', error));
+    });
+</script>
+
+</body>
+</html>
