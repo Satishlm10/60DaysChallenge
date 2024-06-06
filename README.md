@@ -55,3 +55,10 @@
    - Using @PathVariable annotation to map a specific value from the requested URL.
    - Using @RequestParam annotation to map muliple values from query parameter in requested URL.
    - Using @RequesBody annotaion to map entire request body payload/object to a DTO. 
+
+# Day-06
+  Today's Learnings
+   - Object-Relational Mapping and Hibernate
+   - JDBC, Spring JDBC, JPA and Spring Data Jpa
+   - Simple console crud application using Spring data jpa
+ 
