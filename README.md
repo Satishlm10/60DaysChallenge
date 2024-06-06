@@ -51,7 +51,7 @@
 
 # Day-05
   Today's Learnings
-    - Mapping request from client and generating appropriate response
-    - Using @PathVariable annotation to map a specific value from the requested URL.
-    - Using @RequestParam annotation to map muliple values from query parameter in requested URL.
-    - Using @RequesBody annotaion to map entire request body payload/object to a DTO. 
+   - Mapping request from client and generating appropriate response
+   - Using @PathVariable annotation to map a specific value from the requested URL.
+   - Using @RequestParam annotation to map muliple values from query parameter in requested URL.
+   - Using @RequesBody annotaion to map entire request body payload/object to a DTO. 
