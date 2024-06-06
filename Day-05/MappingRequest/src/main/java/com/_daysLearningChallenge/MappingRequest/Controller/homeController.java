@@ -34,7 +34,7 @@ public class homeController {
         return "requestBody.html";
     }
 
-    @PostMapping("/home")
+    @PostMapping("/requestBody")
     public String handleFormSubmission(@RequestBody detailsDto details, Model model) {
         model.addAttribute("name", details.getName());
         model.addAttribute("age", details.getAge());
