@@ -9,5 +9,9 @@ public class SpringDataJpaEntityMappingPracticeApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringDataJpaEntityMappingPracticeApplication.class, args);
 	}
-
+	// Entity Mapping Practice
+	/*
+		one to many relationship between customer and orders
+		many to many relationship between orders and products
+	 */
 }
