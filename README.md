@@ -61,18 +61,21 @@
    - Object-Relational Mapping and Hibernate
    - JDBC, Spring JDBC, JPA and Spring Data Jpa
    - Simple console crud application using Spring data jpa
- 
+
  # Day-07
-   Today's Learnings
-    - Entity Relationship Mapping
-    - @OnetoOne Annotation
-    - @OnetoMany Annotation
-    - @ManytoOne Annotation
-    - @ManytoMany Annotation
-# Day-08
-   Today's Learnings
-    - created a simple webpage using:
-      - spring mvc
-      - spring data jpa
-      - thymeleaf and bootstrap
-      - Recaping the learnigs of day01-day07
+  Today's Learnings
+   - Entity Relationship Mapping
+   - @OnetoOne Annotation
+   - @OnetoMany Annotation
+   - @ManytoOne Annotation
+   - @ManytoMany Annotation
+     
+ # Day-08
+  Today's Learnings
+   - created a simple webpage using:
+   - spring mvc
+   - spring data jpa
+   - thymeleaf and bootstrap
+   - Recaping the learnigs of day01-day07
+
+
