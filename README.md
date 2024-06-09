@@ -78,4 +78,12 @@
    - thymeleaf and bootstrap
    - Recaping the learnigs of day01-day07
 
+ # Day-09
+  Today's Learnings
+   - Continuing the development of crud application from day 8
+   - Create, Read, Update, Delete controllers
+   - Local image files handled using IO stream and stored the local file changes in database
+   - more on thymeleaf template engine
+   - @ModelAttribute annotaion and ModelMapper Dependency
+     
 
