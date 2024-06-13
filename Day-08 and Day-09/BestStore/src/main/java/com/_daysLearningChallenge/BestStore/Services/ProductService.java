@@ -3,12 +3,16 @@ package com._daysLearningChallenge.BestStore.Services;
 
 import com._daysLearningChallenge.BestStore.Entities.Dto.ProductDto;
 import com._daysLearningChallenge.BestStore.Entities.Product;
+import com._daysLearningChallenge.BestStore.Exceptions.ResourceNotFoundException;
 import com._daysLearningChallenge.BestStore.Repositories.ProductsRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.resource.NoResourceFoundException;
 
 import java.io.InputStream;
 import java.nio.file.Files;
@@ -28,9 +32,19 @@ public class ProductService {
     @Autowired
     private ModelMapper modelMapper;
 
-   public List<Product> findAllProducts(){
-       return productsRepository.findAll(Sort.by(Sort.Direction.DESC,"id"));
+    public List<Product> findAllProducts(){
+        return productsRepository.findAll(Sort.by(Sort.Direction.DESC,"id"));
+    }
+   public List<Product> findAllProductsWithSorting(String field){
+       return productsRepository.findAll(Sort.by(Sort.Direction.DESC,field));
    }
+
+    public Page<Product> findAllProductsWithPagination(int offset, int pageSize){
+        return productsRepository.findAll(PageRequest.of(offset,pageSize));
+    }
+    public Page<Product> findAllProductsWithSortingAndPagination(int offset, int pageSize,String field){
+        return productsRepository.findAll(PageRequest.of(offset,pageSize).withSort(Sort.by(Sort.Direction.DESC,field)));
+    }
 
    public void saveFormData(ProductDto productDto){
 
@@ -73,12 +87,12 @@ public class ProductService {
    }
 
    public Product findProductById(int id){
-       return productsRepository.findById(id).get();
+       return productsRepository.findById(id).orElseThrow(()-> new ResourceNotFoundException("Product",id));
    }
 
    public Product updateProducts(ProductDto productDto,int id){
 
-       Product product = findProductById(id);
+       Product product = productsRepository.findById(id).orElseThrow(()->new ResourceNotFoundException("Product",id));
        // Deleting Old Image
        if(!productDto.getImageFilename().isEmpty())
        {
@@ -126,7 +140,7 @@ public class ProductService {
    public  void deleteProduct(int id){
        try
        {
-           Product product = findProductById(id);
+           Product product = productsRepository.findById(id).orElseThrow(()-> new ResourceNotFoundException("Product",id));
            Path imagePath = Paths.get("/resources/static/images/" + product.getImageFilename());
            try
            {
