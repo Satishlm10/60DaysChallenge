@@ -86,4 +86,9 @@
    - more on thymeleaf template engine
    - @ModelAttribute annotaion and ModelMapper Dependency
      
-
+# Day-10,11,12,13
+- Exception Handling
+- Server side validation which validation api
+- Introduction to Spring Security
+- Pagination and sorting
+  
