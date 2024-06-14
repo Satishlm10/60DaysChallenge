@@ -91,4 +91,10 @@
 - Server side validation which validation api
 - Introduction to Spring Security
 - Pagination and sorting
-  
+
+# Day-14
+- Spring security architecture
+- Spring security filter chain
+- Spring security internal flow
+- How user is authenticated and how session handled for an authenticated user.
+
