@@ -12,8 +12,6 @@ import { CardsComponent } from './components/cards/cards.component';
 import { AuthActivateRouteGuard } from './routeguards/auth.routeguard';
 import { HomeComponent } from './components/home/home.component';
 
-
-// connected the angular ui application to the backend
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
   { path: 'home', component: HomeComponent},
