@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="SpringSecurityBasicsDay-17" />
+        <module name="SpringSecurityBasicsDay-16" />
+        <module name="SpringSecurityBasics2" />
+        <module name="SpringSecurityBasicsDay-18" />
+        <module name="SpringSecurityBasics" />
+        <module name="SpringSecurityBasicsDay-24" />
+        <module name="SpringSecurityBasicsDay-23" />
+        <module name="SpringSecurityBasicsDay-22" />
+        <module name="SpringSecurityBasicsDay-21" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="SpringSecurityBasics" options="-parameters" />
+      <module name="SpringSecurityBasics2" options="-parameters" />
+      <module name="SpringSecurityBasicsDay-16" options="-parameters" />
+      <module name="SpringSecurityBasicsDay-17" options="-parameters" />
+      <module name="SpringSecurityBasicsDay-18" options="-parameters" />
+      <module name="SpringSecurityBasicsDay-21" options="-parameters" />
+      <module name="SpringSecurityBasicsDay-22" options="-parameters" />
+      <module name="SpringSecurityBasicsDay-23" options="-parameters" />
+      <module name="SpringSecurityBasicsDay-24" options="-parameters" />
+    </option>
+  </component>
+</project>
